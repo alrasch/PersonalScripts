@@ -112,6 +112,10 @@ export PATH=$HOME/.local/bin:/work/docker-shortcuts:$HOME/Dev/ProductivityScript
 
 xset r rate 220 40
 
+if [ -n "$DISPLAY" ]; then
+  xset b off
+fi
+
 PATH="/home/aleksander/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/aleksander/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/aleksander/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
