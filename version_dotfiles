@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DOTS="$HOME/Dev/ProductivityScripts/dots"
+
+cp $HOME/.vimrc "$DOTS/.vimrc"
+cp $HOME/.i3/config "$DOTS/i3-gaps"
