@@ -359,8 +359,11 @@ gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
-# gaps inner all set 10
-# gaps outer all plus 5
+bindsym $mod+Ctrl+plus        gaps outer current plus  5
+bindsym $mod+Ctrl+minus       gaps outer current minus 5
+bindsym $mod+Ctrl+Shift+plus  gaps inner current plus  5
+bindsym $mod+Ctrl+Shift+minus gaps inner current minus 5
+
 
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
