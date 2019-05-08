@@ -94,7 +94,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ga="git add"
 alias gb="git checkout -"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gco="git checkout"
 alias gd="git diff"
 alias gf="git fetch"
