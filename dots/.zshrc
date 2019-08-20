@@ -110,7 +110,7 @@ export prompt_context() {}
 
 export PATH=$HOME/.local/bin:/work/docker-shortcuts:$HOME/Dev/ProductivityScripts:$PATH
 
-xset r rate 220 40
+xset r rate 220 60
 
 if [ -n "$DISPLAY" ]; then
   xset b off
