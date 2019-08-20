@@ -1872,3 +1872,9 @@
 # config.bind('n', 'prompt-accept no', mode='yesno')
 # config.bind('y', 'prompt-accept yes', mode='yesno')
 
+config.set(
+	'hints.selectors',
+	{'scrollable': ['#ghx-pool-column']}
+)
+
+config.bind(';c', 'hint scrollable')
