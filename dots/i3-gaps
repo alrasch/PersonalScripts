@@ -64,14 +64,24 @@ bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+bindsym $mod+Ctrl+Shift+s --release exec "scrot -s $HOME/Dropbox/Work/images/$(date +%Y%m%d_%H%M%S).png"
+
+# Open terminals at common folders
+bindsym $mod+F5 exec terminal -cd '/work/dei'
+bindsym $mod+F6 exec terminal -cd '/home/aleksander/Dev/ProductivityScripts'
+bindsym $mod+F7 exec terminal -cd '/work/dei-release'
 
 focus_follows_mouse no
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
+# Move focus with arrows or vim-keys
+bindsym $mod+Left  focus left
+bindsym $mod+h     focus left
+bindsym $mod+Down  focus down
+bindsym $mod+j     focus down
+bindsym $mod+Up    focus up
+bindsym $mod+k     focus up
 bindsym $mod+Right focus right
+bindsym $mod+l     focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -85,7 +95,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split h
+bindsym $mod+c split h
 bindsym $mod+v split v
 bindsym $mod+q split toggle
 
@@ -156,22 +166,22 @@ bindsym $mod+Ctrl+9 move container to workspace $ws9
 bindsym $mod+Ctrl+0 move container to workspace $ws10
 
 # Move to workspace with focused container
-bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
+bindsym $mod+Shift+1 move container to workspace $ws1 
+bindsym $mod+Shift+2 move container to workspace $ws2 
+bindsym $mod+Shift+3 move container to workspace $ws3 
+bindsym $mod+Shift+4 move container to workspace $ws4 
+bindsym $mod+Shift+5 move container to workspace $ws5 
+bindsym $mod+Shift+6 move container to workspace $ws6 
+bindsym $mod+Shift+7 move container to workspace $ws7 
+bindsym $mod+Shift+8 move container to workspace $ws8 
+bindsym $mod+Shift+9 move container to workspace $ws9 
+bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
-# assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
-# assign [class="Skype"] $ws5
+assign [class="jetbrains-phpstorm"] $ws2
+assign [class="jetbrains-datagrip"] $ws4
+assign [class="Thunderbird"]        $ws5
+assign [class="Slack"]              $ws8
 
 # Open specific applications in floating mode
 for_window [class="calamares"] floating enable border normal
