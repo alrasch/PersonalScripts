@@ -865,11 +865,11 @@ c.colors.tabs.selected.odd.fg = '#00FF00'
 
 ## Font used in the completion categories.
 ## Type: Font
-# c.fonts.completion.category = 'bold 10pt monospace'
+c.fonts.completion.category = '12pt TerminessTTF Nerd Font'
 
 ## Font used in the completion widget.
 ## Type: Font
-# c.fonts.completion.entry = '10pt monospace'
+c.fonts.completion.entry = '12pt TerminessTTF Nerd Font'
 
 ## Font used for the debugging console.
 ## Type: QtFont
