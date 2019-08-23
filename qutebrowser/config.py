@@ -246,11 +246,11 @@
 
 ## Background color of the statusbar in command mode.
 ## Type: QssColor
-# c.colors.statusbar.command.bg = 'black'
+c.colors.statusbar.command.bg = '#222D31'
 
 ## Foreground color of the statusbar in command mode.
 ## Type: QssColor
-# c.colors.statusbar.command.fg = 'white'
+c.colors.statusbar.command.fg = '#00FF00'
 
 ## Background color of the statusbar in private browsing + command mode.
 ## Type: QssColor
@@ -270,7 +270,7 @@
 
 ## Background color of the statusbar.
 ## Type: QssColor
-# c.colors.statusbar.normal.bg = 'black'
+c.colors.statusbar.normal.bg = '#222D31'
 
 ## Foreground color of the statusbar.
 ## Type: QssColor
@@ -324,15 +324,15 @@
 
 ## Background color of the tab bar.
 ## Type: QssColor
-# c.colors.tabs.bar.bg = '#555555'
+c.colors.tabs.bar.bg = '#000000'
 
 ## Background color of unselected even tabs.
 ## Type: QtColor
-# c.colors.tabs.even.bg = 'darkgrey'
+c.colors.tabs.even.bg = '#222D31'
 
 ## Foreground color of unselected even tabs.
 ## Type: QtColor
-# c.colors.tabs.even.fg = 'white'
+c.colors.tabs.even.fg = '#AAAAAA'
 
 ## Color for the tab indicator on errors.
 ## Type: QtColor
@@ -357,11 +357,11 @@
 
 ## Background color of unselected odd tabs.
 ## Type: QtColor
-# c.colors.tabs.odd.bg = 'grey'
+c.colors.tabs.odd.bg = '#222D31'
 
 ## Foreground color of unselected odd tabs.
 ## Type: QtColor
-# c.colors.tabs.odd.fg = 'white'
+c.colors.tabs.odd.fg = '#AAAAAA'
 
 ## Background color of pinned unselected even tabs.
 ## Type: QtColor
@@ -397,19 +397,19 @@
 
 ## Background color of selected even tabs.
 ## Type: QtColor
-# c.colors.tabs.selected.even.bg = 'black'
+c.colors.tabs.selected.even.bg = '#444444'
 
 ## Foreground color of selected even tabs.
 ## Type: QtColor
-# c.colors.tabs.selected.even.fg = 'white'
+c.colors.tabs.selected.even.fg = '#00FF00'
 
 ## Background color of selected odd tabs.
 ## Type: QtColor
-# c.colors.tabs.selected.odd.bg = 'black'
+c.colors.tabs.selected.odd.bg = '#444444'
 
 ## Foreground color of selected odd tabs.
 ## Type: QtColor
-# c.colors.tabs.selected.odd.fg = 'white'
+c.colors.tabs.selected.odd.fg = '#00FF00'
 
 ## Background color for webpages if unset (or empty to use the theme's
 ## color).
@@ -910,11 +910,11 @@
 
 ## Font used in the statusbar.
 ## Type: Font
-# c.fonts.statusbar = '10pt monospace'
+c.fonts.statusbar = '14pt TerminessTTF Nerd Font Mono'
 
 ## Font used in the tab bar.
 ## Type: QtFont
-# c.fonts.tabs = '10pt monospace'
+c.fonts.tabs = '14pt Terminess TTF Nerd Font'
 
 ## Font family for cursive fonts.
 ## Type: FontFamily
@@ -1026,7 +1026,7 @@
 ## CSS selectors used to determine which elements on a page should have
 ## hints.
 ## Type: Dict
-c.hints.selectors = {'all': ['a', 'area', 'textarea', 'select', 'input:not([type="hidden"])', 'button', 'frame', 'iframe', 'img', 'link', 'summary', '[onclick]', '[onmousedown]', '[role="link"]', '[role="option"]', '[role="button"]', '[ng-click]', '[ngClick]', '[data-ng-click]', '[x-ng-click]', '[tabindex]'], 'links': ['a[href]', 'area[href]', 'link[href]', '[role="link"][href]'], 'images': ['img'], 'media': ['audio', 'img', 'video'], 'url': ['[src]', '[href]'], 'inputs': ['input[type="text"]', 'input[type="date"]', 'input[type="datetime-local"]', 'input[type="email"]', 'input[type="month"]', 'input[type="number"]', 'input[type="password"]', 'input[type="search"]', 'input[type="tel"]', 'input[type="time"]', 'input[type="url"]', 'input[type="week"]', 'input:not([type])', 'textarea'], 'scrollable': ['#ghx-pool-column']}
+c.hints.selectors = {'all': ['a', 'area', 'textarea', 'select', 'input:not([type="hidden"])', 'button', 'frame', 'iframe', 'img', 'link', 'summary', '[onclick]', '[onmousedown]', '[role="link"]', '[role="option"]', '[role="button"]', '[ng-click]', '[ngClick]', '[data-ng-click]', '[x-ng-click]', '[tabindex]'], 'links': ['a[href]', 'area[href]', 'link[href]', '[role="link"][href]'], 'images': ['img'], 'media': ['audio', 'img', 'video'], 'url': ['[src]', '[href]'], 'inputs': ['input[type="text"]', 'input[type="date"]', 'input[type="datetime-local"]', 'input[type="email"]', 'input[type="month"]', 'input[type="number"]', 'input[type="password"]', 'input[type="search"]', 'input[type="tel"]', 'input[type="time"]', 'input[type="url"]', 'input[type="week"]', 'input:not([type])', 'textarea'], 'scrollable': ['#ghx-pool-column, .sidebar']}
 
 ## Make characters in hint strings uppercase.
 ## Type: Bool
@@ -1292,7 +1292,7 @@ c.hints.selectors = {'all': ['a', 'area', 'textarea', 'select', 'input:not([type
 
 ## Padding (in pixels) for the statusbar.
 ## Type: Padding
-# c.statusbar.padding = {'top': 1, 'bottom': 1, 'left': 0, 'right': 0}
+c.statusbar.padding = {'top': 3, 'bottom': 3, 'left': 0, 'right': 0}
 
 ## Position of the status bar.
 ## Type: VerticalPosition
