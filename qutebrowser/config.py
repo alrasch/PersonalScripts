@@ -1544,7 +1544,11 @@ c.statusbar.padding = {'top': 3, 'bottom': 3, 'left': 0, 'right': 0}
 ## used by prepending the search engine name to the search term, e.g.
 ## `:open google qutebrowser`.
 ## Type: Dict
-# c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}'}
+c.url.searchengines = {	
+	'DEFAULT': 'https://google.com/search/q={}',
+	'j'      : 'https://jira.sportradar.ag/browse/{}',
+	'='      : 'https://wolframaplha.com/input/?{}'
+}
 
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
