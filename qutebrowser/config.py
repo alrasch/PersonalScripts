@@ -1545,7 +1545,7 @@ c.statusbar.padding = {'top': 3, 'bottom': 3, 'left': 0, 'right': 0}
 ## `:open google qutebrowser`.
 ## Type: Dict
 c.url.searchengines = {	
-	'DEFAULT': 'https://google.com/search/q={}',
+	'DEFAULT': 'https://google.com/search?q={}',
 	'j'      : 'https://jira.sportradar.ag/browse/{}',
 	'='      : 'https://wolframaplha.com/input/?{}'
 }
