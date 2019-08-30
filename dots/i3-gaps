@@ -64,8 +64,8 @@ bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
-bindsym $mod+Ctrl+Shift+s --release exec "scrot -s $HOME/Dropbox/Work/images/$(date +%Y%m%d_%H%M%S).png"
-
+bindsym $mod+Ctrl+Shift+s --release exec "scrot -s /home/aleksander/Dropbox/Work/images/$(date +%Y%m%d_%H%M%S).png"
+bindsym $mod+Ctrl+s exec terminal -e ranger -cd /home/aleksander/Dropbox/Work/images
 # Open terminals at common folders
 bindsym $mod+F5 exec terminal -cd '/work/dei'
 bindsym $mod+F6 exec terminal -cd '/home/aleksander/Dev/ProductivityScripts'
