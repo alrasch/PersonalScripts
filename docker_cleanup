@@ -1,6 +1,6 @@
 #!/bin/bash
-
-docker rm -v $(docker ps -qa --no-trunc -f status=exited)
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
 docker images -qf dangling=true | xargs docker rmi
 docker volume rm $(docker volume ls -qf dangling=true)
 
