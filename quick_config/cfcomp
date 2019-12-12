@@ -1,0 +1,4 @@
+#!/bin/bash
+
+vim $HOME/.config/compton.conf
+
