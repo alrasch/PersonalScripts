@@ -110,6 +110,7 @@ alias rczsh="vim $HOME/.zshrc"
 export prompt_context() {}
 
 export PATH=$HOME/.local/bin:/work/docker-shortcuts:$HOME/Dev/ProductivityScripts:$PATH
+export PATH=$HOME/Dev/ProductivityScripts/quick_config:$PATH
 
 xset r rate 220 60
 
