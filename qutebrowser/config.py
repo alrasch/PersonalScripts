@@ -1547,7 +1547,8 @@ c.statusbar.padding = {'top': 3, 'bottom': 3, 'left': 0, 'right': 0}
 c.url.searchengines = {	
 	'DEFAULT': 'https://google.com/search?q={}',
 	'j'      : 'https://jira.sportradar.ag/browse/{}',
-	'='      : 'https://wolframalpha.com/input/?{}'
+	'='      : 'https://wolframalpha.com/input/?{}',
+	'gmail'  : 'https://mail.google.com/mail/u/{}'
 }
 
 ## Page(s) to open at the start.
