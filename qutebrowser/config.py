@@ -857,7 +857,7 @@ c.colors.tabs.selected.odd.fg = '#00FF00'
 ## `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 ## Same as `{column}`, but starting from index 0.
 ## Type: ShellCommand
-c.editor.command = ['/usr/bin/vim', '-f', '{file}']
+c.editor.command = ['urxvt', '-e', 'vim', '{}']
 
 ## Encoding to use for the editor.
 ## Type: Encoding
