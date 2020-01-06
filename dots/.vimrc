@@ -2,5 +2,6 @@ set number
 set relativenumber
 
 syntax on
-colorscheme vice
+colorscheme monokai-bold
+
 hi Normal guibg=NONE ctermbg=NONE
