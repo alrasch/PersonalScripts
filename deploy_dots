@@ -8,3 +8,4 @@ cp "$DOTS/.zshrc" $HOME/.zshrc
 cp "$DOTS/.Xresources" $HOME/.Xresources
 cp "$DOTS/../qutebrowser/config.py" $HOME/.config/qutebrowser/config.py
 cp "$DOTS/../compton/compton.conf" $HOME/.config/compton.conf
+cp -r "$DOTS/../vim/colors/." $HOME/.vim/colors/
