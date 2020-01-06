@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTS="$HOME/Dev/ProductivityScripts/dots"
+DOTS="$HOME/Dev/PersonalScripts/dots"
 
 cp "$DOTS/.vimrc" $HOME/.vimrc
 cp "$DOTS/i3-gaps" $HOME/.i3/config
