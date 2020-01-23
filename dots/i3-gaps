@@ -431,3 +431,7 @@ bindsym $mod+Ctrl+Shift+2 exec bash ~/Dev/ProductivityScripts/volume_shift -d
 
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left move workspace to output left
+
+# Binding for killing Java when it refuses to behave
+bindsym $mod+Ctrl+Shift+j exec --no-startup-id sudo pkill -f java
+bindsym $mod+Ctrl+j exec --no-startup-id sudo pkill -9 java
