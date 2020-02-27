@@ -1878,3 +1878,4 @@ c.url.searchengines = {
 # config.bind('y', 'prompt-accept yes', mode='yesno')
 
 config.bind(';c', 'hint scrollable')
+config.bind('<Ctrl-Shift-y>', 'hint links spawn --detach mpv --force-window {hint-url}')
