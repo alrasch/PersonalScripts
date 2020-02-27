@@ -104,8 +104,14 @@ alias gpl="git pull"
 alias gs="git status"
 alias gcp="git cherry-pick"
 
-alias rcbash="vim $HOME/.bashrc"
-alias rczsh="vim $HOME/.zshrc"
+alias cfvim="vim $HOME/.vimrc"
+alias cfi3="vim $HOME/.i3/config"
+alias cfbash="vim $HOME/.bashrc"
+alias cfcomp="vim $HOME/.config/compton.conf"
+alias cfinput="vim /etc/inputrc"
+alias cfqb="vim $HOME/.config/qutebrowser/config.py"
+alias cfxres="vim $HOME/.Xresources"
+alias cfzsh="vim $HOME/.zshrc"
 
 export prompt_context() {}
 
@@ -126,3 +132,5 @@ PERL_MB_OPT="--install_base \"/home/aleksander/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/aleksander/perl5"; export PERL_MM_OPT;
 
 export EDITOR=vim;
+
+source /home/aleksander/.config/broot/launcher/bash/br
