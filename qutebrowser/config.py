@@ -881,7 +881,7 @@ c.fonts.completion.entry = '12pt TerminessTTF Nerd Font'
 
 ## Font used for the hints.
 ## Type: Font
-# c.fonts.hints = 'bold 10pt monospace'
+c.fonts.hints = '12pt TerminessTTF Nerd Font'
 
 ## Font used in the keyhint widget.
 ## Type: Font
