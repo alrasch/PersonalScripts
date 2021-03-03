@@ -434,4 +434,6 @@ bindsym $mod+Ctrl+Left move workspace to output left
 
 # Binding for killing Java when it refuses to behave
 bindsym $mod+Ctrl+Shift+j exec --no-startup-id sudo pkill -f java
+bindsym $mod+Ctrl+Shift+n exec --no-startup-id sudo pkill -f node
 bindsym $mod+Ctrl+j exec --no-startup-id sudo pkill -9 java
+bindsym $mod+Ctrl+n exec --no-startup-id sudo pkill -9 node

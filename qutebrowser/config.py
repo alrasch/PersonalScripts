@@ -397,7 +397,7 @@ c.colors.tabs.odd.fg = '#AAAAAA'
 
 ## Background color of selected even tabs.
 ## Type: QtColor
-c.colors.tabs.selected.even.bg = '#444444'
+c.colors.tabs.selected.even.bg = '#4444FF'
 
 ## Foreground color of selected even tabs.
 ## Type: QtColor
@@ -405,7 +405,7 @@ c.colors.tabs.selected.even.fg = '#00FF00'
 
 ## Background color of selected odd tabs.
 ## Type: QtColor
-c.colors.tabs.selected.odd.bg = '#444444'
+c.colors.tabs.selected.odd.bg = '#4444AA'
 
 ## Foreground color of selected odd tabs.
 ## Type: QtColor
@@ -914,7 +914,9 @@ c.fonts.statusbar = '14pt TerminessTTF Nerd Font Mono'
 
 ## Font used in the tab bar.
 ## Type: QtFont
-c.fonts.tabs = '14pt Terminess TTF Nerd Font'
+c.fonts.tabs.selected = '14pt Terminess TTF Nerd Font'
+c.fonts.tabs.unselected = '14pt Terminess TTF Nerd Font'
+
 
 ## Font family for cursive fonts.
 ## Type: FontFamily
@@ -1437,7 +1439,7 @@ c.statusbar.padding = {'top': 3, 'bottom': 3, 'left': 0, 'right': 0}
 ##   - bottom
 ##   - left
 ##   - right
-# c.tabs.position = 'top'
+c.tabs.position = 'left'
 
 ## Which tab to select when the focused tab is removed.
 ## Type: SelectOnRemove
@@ -1500,7 +1502,7 @@ c.statusbar.padding = {'top': 3, 'bottom': 3, 'left': 0, 'right': 0}
 ## Width (in pixels or as percentage of the window) of the tab bar if
 ## it's vertical.
 ## Type: PercOrInt
-# c.tabs.width = '20%'
+c.tabs.width = '10%'
 
 ## Wrap when changing tabs.
 ## Type: Bool
