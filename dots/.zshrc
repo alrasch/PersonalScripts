@@ -118,6 +118,7 @@ export prompt_context() {}
 export PATH=$HOME/.local/bin:/work/docker-shortcuts:$HOME/Dev/PersonalScripts/:$PATH
 export PATH=$HOME/Dev/PersonalScripts/quick_config:$PATH
 export PATH=$HOME/Dev/PersonalScripts/work:$PATH
+export PATH=$HOME/Dev/workscripts/:$PATH
 
 xset r rate 220 60
 
