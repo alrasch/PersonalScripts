@@ -135,4 +135,4 @@ PERL_MM_OPT="INSTALL_BASE=/home/aleksander/perl5"; export PERL_MM_OPT;
 export EDITOR=vim;
 export BROWSER=qutebrowser;
 
-source /home/aleksander/.config/broot/launcher/bash/br
+xmodmap -e "keycode 66 = ISO_Level3_Shift"
