@@ -3,10 +3,5 @@
 DOTS="$HOME/Dev/PersonalScripts/dots"
 
 cp "$DOTS/.vimrc" $HOME/.vimrc
-cp "$DOTS/i3-gaps" $HOME/.i3/config
 cp "$DOTS/.zshrc" $HOME/.zshrc
-cp "$DOTS/.Xresources" $HOME/.Xresources
-cp "$DOTS/redshift.conf" $HOME/.config/redshift.conf
 cp "$DOTS/../qutebrowser/config.py" $HOME/.config/qutebrowser/config.py
-cp "$DOTS/../compton/compton.conf" $HOME/.config/compton.conf
-cp -r "$DOTS/../vim/colors/." $HOME/.vim/colors/
