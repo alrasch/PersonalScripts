@@ -1,12 +1,7 @@
 #!/bin/bash
 
-DOTS="$HOME/Dev/PersonalScripts/dots"
+PROJECT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
-cp $HOME/.vimrc "$DOTS/.vimrc"
-cp $HOME/.i3/config "$DOTS/i3-gaps"
-cp $HOME/.zshrc "$DOTS/.zshrc"
-cp $HOME/.Xresources "$DOTS/.Xresources"
-cp $HOME/.config/redshift.conf "$DOTS/redshift.conf"
-cp $HOME/.config/qutebrowser/config.py "$DOTS/../qutebrowser/config.py"
-cp $HOME/.config/compton.conf "$DOTS/../compton/compton.conf"
-cp $HOME/.vim/colors/* "$DOTS/../vim/colors/"
+cp "$HOME/.vimrc" "$PROJECT_ROOT/dots/.vimrc"
+cp "$HOME/.zshrc" "$PROJECT_ROOT/dots/.zshrc"
+cp "$HOME/.config/qutebrowser/config.py" "$PROJECT_ROOT/dots/qutebrowser/config.py"
