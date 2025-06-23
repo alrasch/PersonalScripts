@@ -1,7 +1,22 @@
 #!/bin/bash
 
-DOTS="$HOME/Dev/PersonalScripts/dots"
+PROJECT_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
-cp "$DOTS/.vimrc" $HOME/.vimrc
-cp "$DOTS/.zshrc" $HOME/.zshrc
-cp "$DOTS/../qutebrowser/config.py" $HOME/.config/qutebrowser/config.py
+backup_and_copy() {
+  [ -e "$2" ] && mv "$2" "$2.bak"
+  cp "$1" "$2"
+}
+
+FILES=(
+  "$PROJECT_ROOT/dots/.vimrc:$HOME/.vimrc"
+  "$PROJECT_ROOT/dots/.zshrc:$HOME/.zshrc"
+  "$PROJECT_ROOT/dots/qutebrowser/config.py:$HOME/.config/qutebrowser/config.py"
+)
+
+for pair in "${FILES[@]}"; do
+  IFS=":" read -r src dst <<< "$pair"
+  backup_and_copy "$src" "$dst"
+done
+
+
+
