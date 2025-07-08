@@ -124,6 +124,7 @@ alias gs="git status"
 alias gcp="git cherry-pick"
 alias gu="git push -u"
 alias gm="git checkout main && git pull"
+alias gg="git add . && git commit -m squash && git rebase -i HEAD~2"
 
 alias lsa="ls -lah"
 
