@@ -11,6 +11,7 @@ FILES=(
   "$PROJECT_ROOT/dots/.vimrc:$HOME/.vimrc"
   "$PROJECT_ROOT/dots/.zshrc:$HOME/.zshrc"
   "$PROJECT_ROOT/dots/qutebrowser/config.py:$HOME/.config/qutebrowser/config.py"
+  "$PROJECT_ROOT/dots/i3/config:$HOME/.config/i3/config"
 )
 
 for pair in "${FILES[@]}"; do
